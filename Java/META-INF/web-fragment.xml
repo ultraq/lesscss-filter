@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ============================ -->
+<!-- LessCSS filter configuration -->
+<!-- ============================ -->
+
+<web-fragment xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-fragment_3_0.xsd"
+	id="LessCSSFilter" version="3.0">
+
+	<display-name>LessCSS Filter</display-name>
+	<name>LessCSSFilter</name> 
+
+</web-fragment>
