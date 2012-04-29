@@ -39,7 +39,7 @@ public class LessCSSFilter implements Filter {
 	}
 
 	/**
-	 * Process a request for a .less resource, processing the result and
+	 * Process a request for a LESS file, processing the result and
 	 * returning the compiled CSS file.
 	 * 
 	 * @param req
