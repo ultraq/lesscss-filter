@@ -12,4 +12,12 @@
 	<display-name>LessCSS Filter</display-name>
 	<name>LessCSSFilter</name>
 
+	<!-- Fragment order, ideally this should be the last filter in the chain so
+		 that it can generate the CSS files as soon as possible -->
+	<ordering>
+		<after>
+			<others/>
+		</after>
+	</ordering>
+
 </web-fragment>
