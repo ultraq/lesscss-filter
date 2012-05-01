@@ -2,6 +2,7 @@
 package nz.net.ultraq.web.lesscss;
 
 import org.mozilla.javascript.Context;
+import org.mozilla.javascript.JavaScriptException;
 import org.mozilla.javascript.Scriptable;
 import org.mozilla.javascript.tools.shell.Global;
 
@@ -10,7 +11,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * Processes a LESS file using the Mozilla Rhino JavaScript engine for Java.
+ * Process LessCSS input using less.js on Mozilla Rhino.
  * 
  * @author Emanuel Rabina
  */
@@ -37,8 +38,11 @@ public class LessCSSProcessor {
 
 	/**
 	 * Create a new LessCSS processor.
+	 * 
+	 * @throws LessCSSException If there was a problem initializing the LessCSS
+	 * 							processor.
 	 */
-	public LessCSSProcessor() {
+	public LessCSSProcessor() throws LessCSSException {
 
 		try {
 			Context context = Context.enter();
@@ -64,6 +68,17 @@ public class LessCSSProcessor {
 	}
 
 	/**
+	 * Process the LESS file, setting the processed result in the LESS file
+	 * object.
+	 * 
+	 * @param lessfile The LESS file object to process.
+	 */
+	public void process(LessCSSFile lessfile) {
+
+		lessfile.setProcessedContent(process(lessfile.getFilename(), lessfile.getSourceContent()));
+	}
+
+	/**
 	 * Process the LESS input, returning the processed CSS.
 	 * 
 	 * @param input The LESS input to process.
@@ -71,21 +86,7 @@ public class LessCSSProcessor {
 	 */
 	public String process(String input) {
 
-		try {
-			Context context = Context.enter();
-			context.setLanguageVersion(Context.VERSION_1_8);
-
-			// Process the LESS input
-			String processless = processjs.replace("{0}", "(inline input)")
-					.replace("{1}", input.replace("'", "\\'").replaceAll("\\s", " "));
-			return context.evaluateString(scope, processless, "process-less.js", 1, null).toString();
-		}
-		catch (RuntimeException ex) {
-			throw new LessCSSException("Unable to process LESS input", ex);
-		}
-		finally {
-			Context.exit();
-		}
+		return process("(inline input)", input);
 	}
 
 	/**
@@ -106,24 +107,11 @@ public class LessCSSProcessor {
 					.replace("{1}", input.replace("'", "\\'").replaceAll("\\s", " "));
 			return context.evaluateString(scope, processless, "process-less.js", 1, null).toString();
 		}
-		catch (RuntimeException ex) {
+		catch (JavaScriptException ex) {
 			throw new LessCSSException("Unable to process LESS input from " + filename, ex);
 		}
 		finally {
 			Context.exit();
 		}
-	}
-
-	/**
-	 * Process the LESS file, setting the processed result in the LESS file
-	 * object.
-	 * 
-	 * @param input The LESS file object to process.
-	 * @return The same LESS file with updated processed content.
-	 */
-	public LessCSSFile process(LessCSSFile input) {
-
-		input.setProcessedContent(process(input.getLessFilename(), input.getLessFileContent()));
-		return input;
 	}
 }
