@@ -32,13 +32,6 @@ public class LessCSSFilter extends ResourceProcessingFilter<LessCSSFile> {
 	}
 
 	/**
-	 * Does nothing.
-	 */
-	@Override
-	public void destroy() {
-	}
-
-	/**
 	 * Process a LESS file, setting the compiled CSS file in the result.
 	 * 
 	 * @param resource
