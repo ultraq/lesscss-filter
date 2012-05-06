@@ -22,7 +22,7 @@ Requirements
 Installation
 ------------
 
-1. Download a copy of of the pre-compiled JAR from [my website](http://www.ultraq.net.nz/programming/lesscss-filter/)
+1. Download a copy of of the pre-compiled JAR from [my website](http://www.ultraq.net.nz/lesscss-filter/)
    or build the project from the source code here on GitHub.
 2. Place the JAR in the `WEB-INF/lib` directory of your web application.
 
