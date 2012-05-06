@@ -17,7 +17,7 @@
 				<attribute name="Implementation-Title" value="${project.name}"/>
 				<attribute name="Implementation-Version" value="${project.version}"/>
 				<attribute name="Implementation-Vendor" value="Emanuel Rabina"/>
-				<attribute name="Implementation-URL" value="http://www.ultraq.net.nz/programming/lesscss-filter/"/>
+				<attribute name="Implementation-URL" value="http://www.ultraq.net.nz/programming/${project.shortname}/"/>
 			</manifest>
 		</jar>
 	</target>
