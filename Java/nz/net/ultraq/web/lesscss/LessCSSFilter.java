@@ -16,7 +16,7 @@ import javax.servlet.annotation.WebFilter;
  */
 @WebFilter(
 	filterName = "LessCSSFilter",
-	urlPatterns = "*.css"	
+	urlPatterns = "*.less"
 )
 public class LessCSSFilter extends ResourceProcessingFilter<LessCSSFile> {
 

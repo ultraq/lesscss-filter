@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- ============================ -->
-<!-- LessCSS filter configuration -->
+<!-- LessCSS Filter configuration -->
 <!-- ============================ -->
 
 <web-fragment xmlns="http://java.sun.com/xml/ns/javaee"
@@ -11,6 +11,11 @@
 
 	<display-name>LessCSS Filter</display-name>
 	<name>LessCSSFilter</name>
+
+	<mime-mapping>
+		<extension>less</extension>
+		<mime-type>text/css</mime-type>
+	</mime-mapping>
 
 	<!-- Fragment order, ideally this should be the last filter in the chain so
 		 that it can generate the CSS files as soon as possible -->
