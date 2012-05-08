@@ -21,7 +21,7 @@
 		 that it can generate the CSS files as soon as possible -->
 	<ordering>
 		<after>
-			<others/>
+			<name>YUICompressorFilter</name>
 		</after>
 	</ordering>
 
