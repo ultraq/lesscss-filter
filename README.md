@@ -45,6 +45,8 @@ Usage
    the processing chain so that a proper CSS file can be generated as soon as
    possible:
 
+` `
+
 	<filter>
 		<filter-name>LessCSSFilter</filter-name>
 		<filter-class>nz.net.ultraq.web.lesscss.LessCSSFilter</filter-class>
