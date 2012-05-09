@@ -36,16 +36,13 @@ Installation
 Usage
 -----
 
-1. [Start writing LESS!](http://lesscss.org/)
-2. Don't change `<link rel="stylesheet" .../>` to `<link rel="stylesheet/less" .../>`.
-   like the LESS website advises.  That change only applies to using LESS on the
-   client.
-3. If you're _not_ taking advantage of servlet 3.0 annotations, then you'll need
-   to specify the filter in your `web.xml` file, ideally as the last filter in
-   the processing chain so that a proper CSS file can be generated as soon as
-   possible:
+[Start writing LESS!](http://lesscss.org/)  Also, don't change `<link rel="stylesheet" .../>`
+to `<link rel="stylesheet/less" .../>` like the LESS website advises.  That
+change only applies to using LESS on the client.
 
-` `
+If you're _not_ taking advantage of servlet 3.0 annotations, then you'll need to
+specify the filter in your `web.xml` file, ideally as the last filter in the
+processing chain so that a proper CSS file can be generated as soon as possible:
 
 	<filter>
 		<filter-name>LessCSSFilter</filter-name>
@@ -60,16 +57,15 @@ Usage
 		<mime-type>text/css</mime-type>
 	</mime-mapping>
 
-   The mime-mapping element is optional, but helps some web development tools
-   (eg: FireBug) identify your `.less` files as CSS.
+The mime-mapping element is optional, but helps some web development tools (eg:
+FireBug) identify your `.less` files as CSS.
 
 
 Limitations
 -----------
 
- - This filter only works on URLs which locate a file on the file system.  This
-   is a limitation of the way I've chosen to detect changes to the underlying
-   file, which I've done using Java 7's NIO 2 package.  I do have plans to fix
-   this though by providing fallbacks for other ways a stylesheet can be
-   retrieved.
+This filter only works on URLs which locate a file on the file system.  This is
+a limitation of the way I've chosen to detect changes to the underlying file,
+which I've done using Java 7's NIO 2 package.  I do have plans to fix this
+though by providing fallbacks for other ways a stylesheet can be retrieved.
 
