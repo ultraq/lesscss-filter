@@ -28,7 +28,7 @@ Requirements
 Installation
 ------------
 
-1. Download a copy of of the pre-compiled JAR from [my website](http://www.ultraq.net.nz/downloads/projects/LessCSS Filter 1.0.zip)
+1. Download a copy of of the pre-compiled JAR from [the Downloads section](lesscss-filter/downloads)
    or build the project from the source code here on GitHub.
 2. Place the JAR in the `WEB-INF/lib` directory of your web application.
 
@@ -69,3 +69,9 @@ a limitation of the way I've chosen to detect changes to the underlying file,
 which I've done using Java 7's NIO 2 package.  I do have plans to fix this
 though by providing fallbacks for other ways a stylesheet can be retrieved.
 
+
+Changelog
+---------
+
+### 1.0
+ - Initial release
