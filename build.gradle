@@ -1,0 +1,40 @@
+
+/**
+ * Gradle build script for the LessCSS Filter project.  Creates the standalone
+ * download file as per the old Ant build script, and all artifacts necessary
+ * to deploy to a Maven repository.
+ * 
+ * @author Emanuel Rabina
+ */
+
+apply plugin: 'java'
+apply from: 'https://raw.github.com/ultraq/gradle-support/master/java-support.gradle'
+apply plugin: 'maven'
+apply from: 'https://raw.github.com/ultraq/gradle-support/master/maven-support.gradle'
+apply from: 'https://raw.github.com/ultraq/gradle-support/master/bundle.gradle'
+
+//project.name        = 'LessCSS Filter'
+project.description = 'LessCSS filter/processor for Java web applications.'
+project.sourceCompatibility = '1.7'
+
+project.group    = 'nz.net.ultraq.web.lesscss'
+project.artifact = 'lesscss-filter'
+project.version  = '1.0.1'
+project.website  = "http://www.ultraq.net.nz/projects/${project.artifact}/"
+project.year     = '2012'
+
+project.author        = 'Emanuel Rabina'
+project.authorEmail   = 'emanuelrabina@gmail.com'
+project.authorWebsite = 'http://www.ultraq.net.nz/'
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+}
+
+dependencies {
+	compile(
+		'nz.net.ultraq.web.filter:post-processing-filter:1.0.1',
+		'org.mozilla:rhino:1.7R4'
+	)
+}

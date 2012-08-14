@@ -28,9 +28,17 @@ Requirements
 Installation
 ------------
 
+### Standalone distribution
 1. Download a copy of of the pre-compiled JAR from [the Downloads section](lesscss-filter/downloads)
    or build the project from the source code here on GitHub.
 2. Place the JAR in the `WEB-INF/lib` directory of your web application.
+
+### For Maven and Maven-compatible dependency managers
+Add a dependency to your project with the following co-ordinates:
+
+ - GroupId: `nz.net.ultraq.web.lesscss`
+ - ArtifactId: `lesscss-filter`
+ - Version: `1.0.1`
 
 
 Usage
@@ -72,6 +80,11 @@ though by providing fallbacks for other ways a stylesheet can be retrieved.
 
 Changelog
 ---------
+
+### 1.0.1
+ - Switched from Ant to Gradle as a build tool.
+ - Made project available from Maven Central.  Maven co-ordinates added to the
+   [Installation](#installation) section.
 
 ### 1.0
  - Initial release
