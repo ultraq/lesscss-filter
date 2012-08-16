@@ -38,7 +38,7 @@ Add a dependency to your project with the following co-ordinates:
 
  - GroupId: `nz.net.ultraq.web.lesscss`
  - ArtifactId: `lesscss-filter`
- - Version: `1.0.1`
+ - Version: `1.0.2`
 
 
 Usage
@@ -80,6 +80,12 @@ though by providing fallbacks for other ways a stylesheet can be retrieved.
 
 Changelog
 ---------
+
+### 1.0.2
+ - Update [post-processing-filter](https://github.com/ultraq/post-processing-filter)
+   dependency to 1.0.2
+ - Minor fixes from the updated [maven-support](https://github.com/ultraq/gradle-support)
+   Gradle script.
 
 ### 1.0.1
  - Switched from Ant to Gradle as a build tool.
