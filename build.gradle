@@ -15,6 +15,7 @@ apply from: 'https://raw.github.com/ultraq/gradle-support/master/bundle.gradle'
 
 //project.name        = 'LessCSS Filter'
 project.description = 'LessCSS filter/processor for Java web applications.'
+project.archivesBaseName = 'lesscss-filter'
 project.sourceCompatibility = '1.7'
 
 project.group    = 'nz.net.ultraq.web.lesscss'
