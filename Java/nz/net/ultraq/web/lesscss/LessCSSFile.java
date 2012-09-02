@@ -4,9 +4,9 @@ package nz.net.ultraq.web.lesscss;
 import nz.net.ultraq.web.filter.Resource;
 
 import java.io.IOException;
-import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 /**
  * Class containing a LESS file, and the processed result.  Automatically
@@ -47,7 +47,7 @@ public class LessCSSFile extends Resource {
 			}
 
 			// Replace the @import line with the actual content of the imported file
-			Path importfile = FileSystems.getDefault().getPath(resource.getParent().toString(), importfilename);
+			Path importfile = Paths.get(resource.getParent().toString(), importfilename);
 			sourcefilecontent.replace(importindex, sourcefilecontent.indexOf("\n", importindex),
 					new String(Files.readAllBytes(importfile)));
 
