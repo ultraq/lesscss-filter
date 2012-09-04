@@ -20,7 +20,7 @@ project.sourceCompatibility = '1.7'
 
 project.group    = 'nz.net.ultraq.web.lesscss'
 project.artifact = 'lesscss-filter'
-project.version  = '1.0.2-SNAPSHOT'
+project.version  = '1.0.2'
 project.website  = "http://www.ultraq.net.nz/programming/${project.artifact}/"
 project.year     = '2012'
 
@@ -38,7 +38,7 @@ repositories {
 dependencies {
 	provided 'javax.servlet:javax.servlet-api:3.0.1'
 	compile(
-		'nz.net.ultraq.web.filter:post-processing-filter:1.0.2-SNAPSHOT',
+		'nz.net.ultraq.web.filter:post-processing-filter:1.0.2',
 		'org.mozilla:rhino:1.7R4'
 	)
 }
