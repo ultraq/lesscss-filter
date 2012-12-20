@@ -16,6 +16,9 @@ capabilities in this library can be used by any Java application.  Check the
 source code for details, particularly the `nz.net.ultraq.web.lesscss.LessCSSProcessor`
 class.
 
+ - Current version: 1.0.2
+ - Released: 5 September 2012
+
 
 Requirements
 ------------
