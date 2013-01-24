@@ -38,13 +38,6 @@ project.artifact = 'lesscss-filter'
 project.version  = '1.0.2'
 project.year     = '2012'
 
-repositories {
-	mavenCentral()
-	maven {
-		url 'https://oss.sonatype.org/content/groups/public/'
-	}
-}
-
 dependencies {
 	provided 'javax.servlet:javax.servlet-api:3.0.1'
 	compile(
