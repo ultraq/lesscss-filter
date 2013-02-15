@@ -16,8 +16,8 @@ capabilities in this library can be used by any Java application.  Check the
 source code for details, particularly the `nz.net.ultraq.web.lesscss.LessCSSProcessor`
 class.
 
- - Current version: 1.0.2
- - Released: 5 September 2012
+ - Current version: 1.0.3-SNAPSHOT
+ - Released: ?? ??? 2013
 
 
 Requirements
@@ -41,7 +41,7 @@ Add a dependency to your project with the following co-ordinates:
 
  - GroupId: `nz.net.ultraq.web.lesscss`
  - ArtifactId: `lesscss-filter`
- - Version: `1.0.2`
+ - Version: `1.0.3-SNAPSHOT`
 
 
 Usage
@@ -83,6 +83,10 @@ though by providing fallbacks for other ways a stylesheet can be retrieved.
 
 Changelog
 ---------
+
+### 1.0.3
+ - Project structure reorganization after major fixes to the Gradle build
+   scripts.
 
 ### 1.0.2
  - Update [post-processing-filter](https://github.com/ultraq/post-processing-filter)
