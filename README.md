@@ -85,7 +85,7 @@ Changelog
 ---------
 
 ### 1.0.3
- - Project structure reorganization after major fixes to the Gradle build
+ - Project structure reorganization after changes to the Gradle build
    scripts.
 
 ### 1.0.2
