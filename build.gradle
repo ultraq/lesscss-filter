@@ -41,7 +41,7 @@ project.year     = '2012'
 dependencies {
 	compile('javax.servlet:javax.servlet-api:3.0.1', provided)
 	compile(
-		'nz.net.ultraq.web.filter:post-processing-filter:1.0.2',
+		'nz.net.ultraq.web.filter:post-processing-filter:1.0.3',
 		'org.mozilla:rhino:1.7R4'
 	)
 }
