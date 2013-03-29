@@ -16,8 +16,8 @@ capabilities in this library can be used by any Java application.  Check the
 source code for details, particularly the `nz.net.ultraq.web.lesscss.LessCSSProcessor`
 class.
 
- - Current version: 1.0.3-SNAPSHOT
- - Released: ?? ??? 2013
+ - Current version: 1.0.3
+ - Released: 29 March 2013
 
 
 Requirements
@@ -32,7 +32,7 @@ Installation
 ------------
 
 ### Standalone distribution
-1. Copy the JAR from [the latest download bundle](http://www.ultraq.net.nz/downloads/programming/LessCSS Filter 1.0.2.zip),
+1. Copy the JAR from [the latest download bundle](http://www.ultraq.net.nz/downloads/programming/LessCSS Filter 1.0.3.zip),
    or build the project from the source code here on GitHub.
 2. Place the JAR in the `WEB-INF/lib` directory of your web application.
 
@@ -41,7 +41,7 @@ Add a dependency to your project with the following co-ordinates:
 
  - GroupId: `nz.net.ultraq.web.lesscss`
  - ArtifactId: `lesscss-filter`
- - Version: `1.0.3-SNAPSHOT`
+ - Version: `1.0.3`
 
 
 Usage

@@ -35,7 +35,7 @@ project.sourceCompatibility = '1.7'
 
 project.group    = 'nz.net.ultraq.web.lesscss'
 project.artifact = 'lesscss-filter'
-project.version  = '1.0.3-SNAPSHOT'
+project.version  = '1.0.3'
 project.year     = '2012'
 
 dependencies {
