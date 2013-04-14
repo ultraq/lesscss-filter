@@ -55,18 +55,20 @@ If you're _not_ taking advantage of servlet 3.0 annotations, then you'll need to
 specify the filter in your `web.xml` file, ideally as the last filter in the
 processing chain so that a proper CSS file can be generated as soon as possible:
 
-	<filter>
-		<filter-name>LessCSSFilter</filter-name>
-		<filter-class>nz.net.ultraq.web.lesscss.LessCSSFilter</filter-class>
-	</filter>
-	<filter-mapping>
-		<filter-name>LessCSSFilter</filter-name>
-		<url-pattern>*.less</url-pattern>
-	</filter-mapping>
-	<mime-mapping>
-		<extension>less</extension>
-		<mime-type>text/css</mime-type>
-	</mime-mapping>
+```xml
+<filter>
+	<filter-name>LessCSSFilter</filter-name>
+	<filter-class>nz.net.ultraq.web.lesscss.LessCSSFilter</filter-class>
+</filter>
+<filter-mapping>
+	<filter-name>LessCSSFilter</filter-name>
+	<url-pattern>*.less</url-pattern>
+</filter-mapping>
+<mime-mapping>
+	<extension>less</extension>
+	<mime-type>text/css</mime-type>
+</mime-mapping>
+```
 
 The mime-mapping element is optional, but helps some web development tools (eg:
 FireBug) identify your `.less` files as CSS.
