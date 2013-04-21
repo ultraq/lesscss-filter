@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package nz.net.ultraq.web.lesscss;
+package nz.net.ultraq.lesscss;
 
 import nz.net.ultraq.web.filter.ResourceProcessingFilter;
 
@@ -35,7 +35,7 @@ import javax.servlet.annotation.WebFilter;
 )
 public class LessCSSFilter extends ResourceProcessingFilter<LessCSSFile> {
 
-	private LessCSSProcessor processor;
+	private LessCSSCompiler compiler;
 
 	/**
 	 * {@inheritDoc}
@@ -54,7 +54,7 @@ public class LessCSSFilter extends ResourceProcessingFilter<LessCSSFile> {
 	@Override
 	protected void doProcessing(LessCSSFile resource) {
 
-		processor.process(resource);
+		resource.setProcessedContent(compiler.compile(resource.getFilename(), resource.getSourceContent()));
 	}
 
 	/**
@@ -65,6 +65,6 @@ public class LessCSSFilter extends ResourceProcessingFilter<LessCSSFile> {
 	@Override
 	public void init(FilterConfig filterConfig) {
 
-		processor = new LessCSSProcessor();
+		compiler = new LessCSSCompiler();
 	}
 }

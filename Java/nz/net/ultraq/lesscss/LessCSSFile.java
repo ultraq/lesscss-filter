@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package nz.net.ultraq.web.lesscss;
+package nz.net.ultraq.lesscss;
 
 import nz.net.ultraq.web.filter.Resource;
 
