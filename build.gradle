@@ -27,9 +27,11 @@ apply from: 'https://raw.github.com/ultraq/gradle-support/master/java-support.gr
 apply plugin: 'maven'
 apply from: 'https://raw.github.com/ultraq/gradle-support/master/maven-support.gradle'
 apply from: 'https://raw.github.com/ultraq/gradle-support/master/bundle.gradle'
+apply plugin: 'eclipse'
+apply from: 'https://raw.github.com/ultraq/gradle-support/master/eclipse-support.gradle'
 
 //project.name      = 'LessCSS Filter'
-project.description = 'LessCSS filter/processor for Java web applications.'
+project.description = 'LessCSS filter/compiler for Java web applications.'
 project.archivesBaseName = 'lesscss-filter'
 project.sourceCompatibility = '1.7'
 
