@@ -16,7 +16,7 @@
 
 package nz.net.ultraq.lesscss;
 
-import nz.net.ultraq.web.filter.ResourceProcessingFilter;
+import nz.net.ultraq.postprocessing.ResourceProcessingFilter;
 
 import java.io.IOException;
 

@@ -49,7 +49,7 @@ repositories {
 dependencies {
 	compile('javax.servlet:javax.servlet-api:3.0.1', provided)
 	compile(
-		'nz.net.ultraq.web.filter:post-processing-filter:1.0.3',
+		'nz.net.ultraq.postprocessing:post-processing-filter:1.1',
 		'nz.net.ultraq.lesscss:lesscss-compiler:1.0-SNAPSHOT'
 	)
 }
