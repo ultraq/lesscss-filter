@@ -2,8 +2,8 @@
 Less CSS Filter
 ===============
 
-A LessCSS filter/processor for Java web applications.  (Blog post on the
-'origins' of this little project: [Ultraq's Final MooCow &raquo; Blog &raquo; If only I'd waited](http://www.ultraq.net.nz/blog/IfOnlyIdWaited).)
+A LessCSS filter/compiler for Java web applications.  (Blog post on the 'origins'
+of this little project: [Ultraq's Final MooCow &raquo; Blog &raquo; If only I'd waited](http://www.ultraq.net.nz/blog/IfOnlyIdWaited).)
 
 This filter will process any requests for URLs ending with `.less`, processing
 the LESS file pointed to by the URL and converting it to a standard CSS file.
@@ -11,12 +11,7 @@ Once the file is processed, the result is cached to save on having to process it
 again.  Any changes to the LESS file will be picked up and cause the file to be
 processed the next time it is requested.
 
-While mainly built as post-processing filter, the Less CSS processing
-capabilities in this library can be used by any Java application.  Check the
-source code for details, particularly the `nz.net.ultraq.web.lesscss.LessCSSProcessor`
-class.
-
- - Current version: 1.1-SNAPSHOT
+ - Current version: 1.1
  - Released: ?? April 2013
 
 
@@ -41,7 +36,7 @@ Add a dependency to your project with the following co-ordinates:
 
  - GroupId: `nz.net.ultraq.web.lesscss`
  - ArtifactId: `lesscss-filter`
- - Version: `1.1-SNAPSHOT`
+ - Version: `1.1`
 
 
 Usage
