@@ -34,7 +34,7 @@ Installation
 ### For Maven and Maven-compatible dependency managers
 Add a dependency to your project with the following co-ordinates:
 
- - GroupId: `nz.net.ultraq.web.lesscss`
+ - GroupId: `nz.net.ultraq.lesscss`
  - ArtifactId: `lesscss-filter`
  - Version: `1.1`
 
