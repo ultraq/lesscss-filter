@@ -52,7 +52,7 @@ processing chain so that a proper CSS file can be generated as soon as possible:
 ```xml
 <filter>
 	<filter-name>LessCSSFilter</filter-name>
-	<filter-class>nz.net.ultraq.web.lesscss.LessCSSFilter</filter-class>
+	<filter-class>nz.net.ultraq.lesscss.LessCSSFilter</filter-class>
 </filter>
 <filter-mapping>
 	<filter-name>LessCSSFilter</filter-name>
