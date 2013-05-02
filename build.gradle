@@ -40,16 +40,10 @@ project.artifact = 'lesscss-filter'
 project.version  = '1.1-SNAPSHOT'
 project.year     = '2012'
 
-repositories {
-	maven {
-		url 'https://oss.sonatype.org/content/groups/public/'
-	}
-}
-
 dependencies {
 	compile('javax.servlet:javax.servlet-api:3.0.1', provided)
 	compile(
 		'nz.net.ultraq.postprocessing:post-processing-filter:1.1',
-		'nz.net.ultraq.lesscss:lesscss-compiler:1.0-SNAPSHOT'
+		'nz.net.ultraq.lesscss:lesscss-compiler:1.0'
 	)
 }
