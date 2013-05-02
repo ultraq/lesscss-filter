@@ -12,7 +12,7 @@ again.  Any changes to the LESS file will be picked up and cause the file to be
 processed the next time it is requested.
 
  - Current version: 1.1
- - Released: ?? April 2013
+ - Released: 2 May 2013
 
 
 Requirements
