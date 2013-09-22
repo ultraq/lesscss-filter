@@ -11,8 +11,8 @@ Once the file is processed, the result is cached to save on having to process it
 again.  Any changes to the LESS file will be picked up and cause the file to be
 processed the next time it is requested.
 
- - Current version: 1.1.1
- - Released: 3 August 2013
+ - Current version: 1.1.2
+ - Released: 22 September 2013
 
 
 Requirements
@@ -26,7 +26,7 @@ Installation
 ------------
 
 ### Standalone distribution
-1. Copy the JAR from [the latest download bundle](http://www.ultraq.net.nz/downloads/programming/LessCSS Filter 1.1.1.zip),
+1. Copy the JAR from [the latest release bundle](https://github.com/ultraq/lesscss-filter/releases),
    or build the project from the source code here on GitHub.
 2. Place the JAR in the `WEB-INF/lib` directory of your web application.
 
@@ -35,7 +35,7 @@ Add a dependency to your project with the following co-ordinates:
 
  - GroupId: `nz.net.ultraq.lesscss`
  - ArtifactId: `lesscss-filter`
- - Version: `1.1.1`
+ - Version: `1.1.2`
 
 
 Usage
@@ -78,6 +78,10 @@ which I've done using Java 7's NIO 2 package.
 
 Changelog
 ---------
+
+### 1.1.2
+ - Update [lesscss-compiler](https://github.com/ultraq/lesscss-compiler)
+   dependency to 1.1.2, which in turns uses LessCSS 1.4.2.
 
 ### 1.1.1
  - Update [post-processing-filter](https://github.com/ultraq/post-processing-filter)
