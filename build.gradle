@@ -23,12 +23,10 @@
  */
 
 apply plugin: 'java'
-apply from: 'https://raw.github.com/ultraq/gradle-support/master/java-support.gradle'
 apply plugin: 'maven'
-apply from: 'https://raw.github.com/ultraq/gradle-support/master/maven-support.gradle'
-apply from: 'https://raw.github.com/ultraq/gradle-support/master/bundle.gradle'
-apply plugin: 'eclipse'
-apply from: 'https://raw.github.com/ultraq/gradle-support/master/eclipse-support.gradle'
+apply from: 'https://raw.github.com/ultraq/gradle-support/1.1/gradle-support.gradle'
+apply from: 'https://raw.github.com/ultraq/gradle-support/1.1/maven-support.gradle'
+apply from: 'https://raw.github.com/ultraq/gradle-support/1.1/bundle.gradle'
 
 //project.name      = 'LessCSS Filter'
 project.description = 'LessCSS filter/compiler for Java web applications.'
@@ -37,13 +35,13 @@ project.sourceCompatibility = '1.7'
 
 project.group    = 'nz.net.ultraq.lesscss'
 project.artifact = 'lesscss-filter'
-project.version  = '1.1.2'
+project.version  = '1.1.3-SNAPSHOT'
 project.year     = '2012'
 
 dependencies {
 	compile('javax.servlet:javax.servlet-api:3.0.1', provided)
 	compile(
 		'nz.net.ultraq.postprocessing:post-processing-filter:1.1.1',
-		'nz.net.ultraq.lesscss:lesscss-compiler:1.0.1'
+		'nz.net.ultraq.lesscss:lesscss-compiler:1.0.2-SNAPSHOT'
 	)
 }
